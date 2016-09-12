@@ -1,0 +1,883 @@
+body{
+    color: #264462;
+    font-family: Arial,Helvetica,sans-serif;
+	font-size:13px;	
+	background-image:url('background_image/background-image2.jpg');
+}
+
+a{
+	text-decoration:none;
+	color:grey;
+}
+
+
+.mainWrapper{
+	width:1037px;
+	margin:auto;
+	height:100%;
+	background-color:yellow;
+	background-image:url('mainWrapper/background-image2.jpg');
+}
+
+div{
+	display:block;
+}
+
+
+
+
+header{
+	height:40px;
+	width:100%;
+	background-color:gray;
+
+}
+
+header .tourBar .mainNav{
+	width:400px;
+	height:20px;
+	margin-top:15px;
+	font-size:15px;
+}
+
+header .tourBar .mainNav li a:after{
+	content:'|';
+	color:white;
+	padding:0 15px;
+}
+
+
+
+
+
+.mainWrapper header .tourBar .mainNav{
+	float:right;
+	list-style:none;
+} 
+
+.mainWrapper header .tourBar ul li{
+	display:inline;
+}
+
+.mainWrapper header .tourBar ul li a{
+	color:white;
+	text-decoration:none;
+	margin-right:20px;
+}
+
+.mainWrapper header .tourBar ul li a:hover{
+	color:black;
+	text-decoration:ultra-expanded;
+}
+
+/*start of slider*/
+#slider-nav{
+	display:none;
+}
+
+#slider-nav a.arrows{
+	
+	cursor:pointer;
+	background-color:black;
+	color:white;
+	margin-top:0px;
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+
+#arrow1{
+	float:left;
+	padding:66px 5px ;
+	margin-right:1px;
+}
+
+#arrow2{
+	float:right;
+	padding:66px 5px ;
+}
+
+
+.slider{
+	width:1000px;
+	height:300px;
+	overflow:scroll;
+	
+}
+
+.slider ul{
+	list-style:none;
+	width:2400px;	
+}
+
+.slider li{
+	float:left;
+}
+
+/*internal boxes*/
+
+.slider ul li.slide {
+    width: 200px;
+    height: 148px;
+    list-style: none;
+    float: left;
+}
+
+
+.slider ul li.slide span {
+    width: 197px;
+    height: 148px;
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid black;
+    background-image: url(sliderImage/8949604-cricket-background-with-batsman-hitting-ball-Stock-Vector-sport_2.jpg);
+}
+
+.slider ul li.slide span .box {
+    width: 197px;
+    height: 100px;
+    float: left;
+    margin: 30px 0 0 0;
+}
+
+.slider ul li.slide span .box .teams {
+    float: left;
+    margin: 10px 0 0 20px;
+    border: 1px solid black;
+    background-color: #2F4F4F;
+    height: 20px;
+    width: 100px;
+    color: white;
+    text-align: center;
+	border-radius:5px;
+	padding:.5em;
+}
+
+.slider .slide span .box .seriesName {
+    float: left;
+    margin: 20px 0 0 40px;
+    border: 1px solid black;
+    background-color: #2F4F4F;
+    color: white;
+	border-radius:5px;
+	padding:.5em;
+}
+
+
+.slider ul li.slide span .box .timer {
+    float: right;
+    margin-top: -20px;
+    border: 1px solid black;
+	border-radius:5px;
+	padding:0 5px;
+	background-color:#2F4F4F;
+	color:white;
+}
+
+
+.slider .slide span .box .viewpoints a {
+    float: right;
+    margin-top: 40px;
+    border: 1px solid black;
+    background-color:	#DCDCDC;
+    color: white;
+	border-radius:5px;
+	padding:5px;
+	font-weight:bold;
+	color:black;
+}
+
+.slider .slide span .box .viewpoints a:hover {
+    color:white;
+	background-color:#696969;
+}
+
+/*end of boxes*/
+
+/*start of toggleSlider*/
+
+#panel
+{
+position:absolute;
+top:190px;	
+width:1040px;
+height:150px;
+background:	#2F4F4F;
+display:none;
+}
+
+ a.noPlayerList{
+	text-decoration:none;
+	color:white;
+}
+
+ a.noPlayerList:hover{
+	text-decoration:none;
+	color:white;
+	background-color:#696969;
+}
+
+
+.noPlayerList{
+	float:left;
+	padding:20px;
+	background-color:#A9A9A9;
+	margin-left:47px;
+	margin-top:40px;	
+}
+/*end of ToggleSlider*/
+
+
+
+
+
+section{
+	background-image:url(sectionImages/The-Independent-cricket-pro.jpg);
+	width:100%;
+	min-height:1050px;
+}
+
+
+.mainContent .splLeague>div{
+	border:2px solid lightgray;
+	border-radius:5px;
+	float:left;
+	margin:2% 30px 0 20px;
+    width:25%;
+	height:100px;
+	padding-left:20px;
+	overflow:hidden;
+}
+
+
+
+
+
+
+
+.mainContent .splLeague .freeLg .title{
+	background-color:#708090;
+	box-shadow:0 0 5px 1px black;
+	float:right;
+	color:#fff;
+	width:300px;
+	height:35px;
+}
+
+.mainContent .splLeague .freeLg .title p {
+    float:left;
+    font-size: 1.3em;
+    padding:5px 30px 5px 20px;
+}
+
+div #freeLgWrapper{
+	width:270px;
+	height:93.97px;
+}
+
+.mainContent .splLeague .freeLg .cont {
+    color: #4c62ae;
+    float: left;
+    padding: 2.8% 2%;
+    width: 90%;
+}
+
+div .cont{
+	width:270px;
+	height:44px;
+}
+
+
+.mainContent .splLeague .freeLg .cont .lgInfo {
+    float: left;
+    width: 62%;
+	height:47px;
+}
+
+.mainContent .splLeague .freeLg .cont .leagueWinTitle, .mainContent .splLeague .freeLg .cont .winTitle {
+    float: left;
+    font-weight: 700;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+p.lgWinTitle{
+	width:167.55px;
+	height:16px;
+	font-size:13px;
+	font-weight:bold;
+}
+
+
+
+
+.mainContent .splLeague .freeLg .cont .mlWinLink {
+    float: left;
+    margin-right: 5px;
+    font-size: 13px;
+    line-height: 28px;
+}
+
+.lgOption {
+    background: url(winners.png) no-repeat;
+	float:left;
+	height:18px;
+	width:18px;
+	margin:0px 5px 5px 0;
+}
+
+.lgInfo .left .lgOption1 {
+	background:url(confirmLeague.png) no-repeat;
+	height:18px;
+	width:18px;
+	float:left;
+	margin:5px 5px 5px 0;
+}
+
+.lgInfo .left .lgOption2 {
+	background:url(multipleEntry.png) no-repeat;
+	height:18px;
+	width:20px;
+	float:right;
+	margin:-23px -10px 5px 10px;
+}
+
+
+
+.mainContent .splLeague .freeLg .cont .lgJoin a {
+    float: right;
+}
+
+a.darkerBlueBtn {
+    box-sizing: inherit;
+    background:#2F4F4F ;
+    padding: 5px 9px;
+    border: none;
+	margin:0 2px;
+
+}
+
+
+a.darkerBlueBtn:hover {
+    background: #696969;
+    
+}
+
+
+.darkBlueBtn, .darkerBlueBtn {
+    cursor: pointer;
+    text-decoration:none;
+    overflow: visible;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 18px;
+    height: 18px;
+    	
+}
+
+
+.darkerBlueBtn, .lightBlueBtn, .redBtn {
+    font-weight: 700;
+    color:#fff;
+}
+
+.mainContent .splLeague .freeLg .cont .lgJoin span {
+    float: right;
+    margin:0 3px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+.privateLg{
+	
+}
+
+.mainContent .splLeague .privateLg .title {
+    background:#708090;
+    box-shadow: 0 0 9px 0 black;
+    color: #fff;
+    float: right;
+    width: 110%;
+	height:37px;
+}
+
+.mainContent .splLeague .privateLg .title p {
+    float: left;
+    font-size: 1.3em;
+    padding: 10px 30px 0 15px;
+}
+
+.mainContent .splLeague .privateLg .cont {
+    float: left;
+    padding: 5% 4%;
+    width: 92%;
+	height:30px;
+}
+
+.mainContent .splLeague .privateLg .cont .inviteCode {
+    float: left;
+    width: 100%;
+    margin-bottom: 3px;
+	height:80%;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    -webkit-rtl-ordering: logical;
+    -webkit-user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+	height:20px;
+}
+
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+
+
+.getAFriend{
+	
+}
+
+.mainContent .splLeague .getAFriend .title {
+    background:	#708090;
+    box-shadow: 0 0 5px 0 black;
+    color: #fff;
+    float: right;
+    width: 110%;
+	height:37px;
+}
+
+.mainContent .splLeague .getAFriend .title p {
+    float: left;
+    font-size: 1.3em;
+    padding: 10px 30px 5px 15px;
+}
+
+.mainContent .splLeague .getAFriend .cont {
+    float: left;
+    padding: 5.5% 5%;
+    width: 93%;
+}
+
+.mainContent .splLeague .getAFriend .cont span {
+    color: #1fae79;
+    float: left;
+    line-height: 1;
+    margin: 8px 3px 0 -10px;
+}
+
+.mainContent .splLeague .getAFriend .cont a {
+    border: 1px solid #1fae79;
+    border-radius: 5px;
+    color: #27ad7b;
+    float: right;
+    padding: 5px 0 5px 3px;
+}
+
+.splLgends{
+	color:grey;
+}
+
+
+
+
+
+
+
+
+
+.lgCardStart{
+	
+}
+
+.lgCards {
+    float: left;
+    margin: 20px 0 0;
+    width: 100%;
+    min-height: 520px;
+}
+
+.card {
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    float: left;
+    min-height: 124px;
+	width: 165px;
+    margin: 0 5px 15px 15px;
+    padding: 10px 10px 0;
+	background-color:#C0C0C0;
+    
+}
+
+.card .win {
+    float: left;
+    font-size: 1.4em;
+    line-height: 1;
+    width: 100%;
+}
+
+.card .win {
+    font-weight: 700;
+}
+
+.card .win, .card .winDet p {
+    color:#556B2F;
+}
+
+.card .pay {
+    float: left;
+    margin: 10px 0 0;
+}
+div .lgFillCnt{
+	width:165px;
+	height:30px;
+}
+
+.card .lgFillCnt {
+    float: left;
+    padding: 10px 0 0;
+    width: 100%;
+}
+
+span.lgFillTxt{
+	width:91px;
+	height:13px;
+}
+
+.card .lgFillCnt .lgFilled {
+    background: #d7d7d7;
+    float: left;
+    height: 2px;
+    margin: 5px 0 0;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.card .lgFillCnt .lgFilled span {
+    background: #c61d23;
+    float: left;
+    height: 2px;
+}
+
+.card .actionBtn {
+    float: right;
+    margin: 10px 0;
+}
+
+.card .winDesc {
+    float: left;
+    font-size: 11px;
+    position: relative;
+    padding: 15px 0 0;
+    text-align: center;
+	width:100px;
+}
+
+img{
+	position:relative;
+}
+
+
+a.createTeamLink{
+	color:white;
+	background-color:#2E8B57;
+	padding:20px;
+	position:absolute;
+	top:1310px;
+	left:600px;
+	
+}
+
+a.createTeamLink:hover{
+	background-color:	#696969;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	background-color:#DCDCDC;
+	height:410px;
+	position:relative;
+}
+
+footer .cl100 {
+	padding-top:30px;
+}
+
+
+footer .cl100 .footerNav {
+	float:left;
+	padding-left:35px;
+}
+
+footer .cl100 .footerNav li {
+	padding:0 0 15px;
+}
+
+
+footer span {
+	width:100%;
+	position:absolute;
+	top:200px;
+}
+
+footer .cl100 .footerNav li a {
+	text-decoration:none;	
+	color:gray;
+}
+
+footer .cl100 .footerNav li a:hover {	
+	color:black;
+}
+
+footer .cl100 .footerNav li {
+	list-style:none;	
+}
+
+footer article {
+	position:absolute;
+	top:200px;
+	left:30px;
+	color:grey;
+	font-size:14px;
+	border-top:1px solid black;
+	line-height:22px;
+}
+
+footer article p {
+	padding-top:10px;
+}
+
+#lowestPara{
+	padding-left:300px;
+}
+
+footer article .navBar li{
+	list-style:none;
+	display:inline;
+	padding-left:120px;
+	
+}
+
+footer article .navBar li a{
+	text-decoration:none;
+	color:darkgrey;
+}
+
+
+footer article .navBar li a:hover{
+	color:grey;
+}
+
+
+footer, footer .footerBtm {
+    clear: both;
+    border-top: 1px solid #264462;
+}
+
+
+
+/*Start of Dialog Box*/
+#modalContainer {
+    background-color:rgba(0, 0, 0, 0.3);
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:10000;
+	/* required by MSIE to prevent actions on lower z-index elements */
+}
+
+
+#alertBox {
+    position: relative;
+    width: 300px;
+    min-height: 100px;
+    margin-top: 250px;
+    border: 1px solid #2F4F4F;
+    background-color: #556B2F;
+    border-radius: 10px;
+}
+
+
+#modalContainer > #alertBox {
+    position:fixed;
+}
+
+#alertBox h1 {
+    margin: 0;
+    font: bold 0.9em verdana,arial;
+    background-color: grey;
+    color: #FFF;
+    border-bottom: 3px solid #696969;
+    padding: 10px 0px 10px 90px;
+    border-radius: 10px 10px;
+}
+#alertBox p {
+    font:0.9em verdana,arial;
+    height:50px;
+    padding-left:5px;
+    margin-left:55px;
+	color:white;
+}
+
+#alertBox #closeBtn {
+    display:block;
+    position:relative;
+    margin:5px auto;
+    padding:7px;
+    border:0 none;
+    width:70px;
+    font:0.7em verdana,arial;
+    text-transform:uppercase;
+    text-align:center;
+    color:#FFF;
+    background-color:#006400;
+    border-radius: 3px;
+    text-decoration:none;
+}
+#alertBox #closeBtn:hover {
+background-color:blue;
+}
+
+/* unrelated styles */
+
+#mContainer {
+    position:relative;
+    width:600px;
+    margin:auto;
+    padding:5px;
+    border-top:2px solid #000;
+    border-bottom:2px solid #000;
+    font:0.7em verdana,arial;
+}
+
+h1,h2 {
+    margin:0;
+    padding:4px;
+    font:bold 1.5em verdana;
+    border-bottom:1px solid #000;
+}
+
+code {
+    font-size:1.2em;
+    color:#069;
+}
+
+#credits {
+    position:relative;
+    margin:25px auto 0px auto;
+    width:350px; 
+    font:0.7em verdana;
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+    height:90px;
+    padding-top:4px;
+}
+
+#credits img {
+    float:left;
+    margin:5px 10px 5px 0px;
+    border:1px solid #000000;
+    width:80px;
+    height:79px;
+}
+
+.important {
+    background-color:#F5FCC8;
+    padding:2px;
+}
+
+code span {
+    color:green;
+}
+
+
+
+
+
+
+
+
+
+
+
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+}
+
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+}
+
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+}

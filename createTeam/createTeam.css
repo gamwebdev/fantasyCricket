@@ -1,0 +1,573 @@
+body {
+    font-size: 13px;
+}
+
+body {
+    color: #264462;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+#mainWrapper{
+	margin:0 auto ; 
+	min-width:1024px;
+}
+
+.mainWrapper{
+	float:left;
+	width:100%;
+}
+
+header{
+	float:left;
+	width:100%;
+}
+
+.container{
+	margin:0 auto;
+	width:1000px;
+}
+
+header .logo{
+	float:left;
+	margin:10px 0;
+}
+
+img{
+	height:auto;
+	max-width:100%;
+}
+
+.roundsMain{
+	border:1px solid #d7d7d7;
+	border-radius:5px;
+	float:left;
+	width:978px;
+	height:60px;
+}
+
+.myTeamMain {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.myTeamLeft {
+    float: left;
+    width: 470px;
+}
+
+.creditRemain {
+    float: left;
+    margin: 5px 0;
+    min-height: 36px;
+    width: 100%;
+}
+
+.totalCredit {
+    float: left!important;
+    color: #264462;
+}
+
+.totalCredit>span {
+    color: #c51d23;
+    font-size: 14px;
+    display: block;
+    line-height: 1;
+}
+
+.plCount {
+    float: right!important;
+    font-weight: 700;
+    color: #264462;
+}
+
+.plCount, .totalCredit>span>strong {
+    font-size: 30px;
+}
+
+.plCount>span {
+    color: #c51d23;
+}
+
+.playerSelTabs {
+    margin: 10px 0;
+}
+
+.playerSelTabs, .playerSelTabs ul {
+    float: left;
+    width: 100%;
+}
+
+li, ul {
+    list-style: none;
+    margin: 5px -30px;
+	
+}
+
+.playerSelTabs ul li {
+    
+    border: 1px solid #d7d7d7;
+    border-width: 1px 1px 0;
+    float: left;
+    margin: 0 1% 0 0;
+    border-radius: 5px 5px 0 0;
+    min-width: 77px;
+	background: #B0C4DE;
+	
+}
+
+.playerSelTabs ul li a {
+    position: relative;
+    float: left;
+    text-align: center;
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 15px 15px 7px;
+    min-width: 57%;
+	text-decoration:none;
+}
+
+
+.playerSelTabs ul li a .cnt {
+    background: url(https://cdn1.dream11.com/images/v2/icoPlayerSel.png?ver=9.41) 0 -72px no-repeat;
+    color: #fff;
+    float: left;
+    left: 50%;
+    margin: 0 0 0 -9px;
+    padding: 2px 0 0;
+    position: absolute;
+    top: -9px;
+    text-align: center;
+    width: 17px;
+}
+
+.playerSelTabs .selectNos {
+    border: 1px solid #d7d7d7;
+    float: left;
+    margin: -1px 0 0;
+    padding: 3%;
+    width: 93.5%;
+}
+
+.myPlayerTbl {
+    width: 100%;
+    display: table;
+}
+
+
+
+
+.myPlayerTbl .plTopInfo {
+    display: table-row;
+    background: #e1dfde;
+    color: #778898;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 11.478px;
+}
+
+.myPlayerTbl .plTopInfo .thPlIco {
+    padding-left: 10px;
+    width: 34px;
+}
+
+.myPlayerTbl .tblCell, .myPlayerTbl .thPlIco {
+    padding: 5px;
+    vertical-align: middle;
+    border-bottom: 1px solid #d7d7d7;
+    font-weight: 700;
+    display: table-cell;
+}
+
+
+
+
+
+
+.myPlayerTbl .thPlName {
+    display: table-cell;
+    padding: 5px;
+    vertical-align: middle;
+    border-bottom: 1px solid #d7d7d7;
+    font-weight: 700;
+    text-align: left;
+    border-left: 1px solid #d7d7d7;
+}
+
+
+.myPlayerTbl .plTopInfo .showFl, .myPlayerTbl .plTopInfo .thPlCr, .myPlayerTbl .plTopInfo .thPlPoint {
+    cursor: pointer;
+}
+
+.myPlayerTbl .thPlTeam {
+    width: 62px;
+    position: relative;
+    border-left: 1px solid #d7d7d7;
+}
+
+
+.myPlayerTbl .thPlCr, .myPlayerTbl .thPlPoint, .myPlayerTbl .thPlTeam {
+    font-weight: 700;
+    border-bottom: 1px solid #d7d7d7;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 15px 5px;
+}
+
+.myPlayerTbl .up {
+    border-top: 8px solid #778898;
+}
+
+
+.myPlayerTbl .down, .myPlayerTbl .up {
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    margin: 3px 0 0 3px;
+}
+
+.myPlayerTbl .thPlPoint {
+    width: 60px;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+}
+
+.myPlayerTbl .thPlCr {
+    width: 66px;
+}
+
+.myPlayerTbl .thPlCr span {
+    float: left;
+}
+
+
+.myPlayerTbl .thPlPoint span {
+    float: left;
+}
+
+.myPlayerTbl .thRgtIcon {
+    display: table-cell;
+    padding: 5px;
+    vertical-align: middle;
+    border-bottom: 1px solid #d7d7d7;
+    font-weight: 700;
+    text-align: left;
+    width: 24px;
+}
+
+.myPlayerTbl .xtraSpace {
+    border-bottom: 1px solid #d7d7d7;
+    display: table-cell;
+    width: 18px;
+}
+
+.playerSelTabs .scrollpane {
+    border: 1px solid #d7d7d7;
+    max-height: 303px;
+    overflow-y: scroll;
+}
+
+
+.myPlayerTbl {
+    width: 100%;
+    display: table;
+}
+
+
+.myPlayerTbl .thPlIco {       /*roblem with .myPlayerTb1 and .PlIco1*/
+    width: 38px;
+    text-align: left;
+}
+
+.myPlayerTbl .thPlIco a {
+    display: inline-block;
+    position: relative;
+    height: 36px;
+}
+
+a {
+    background: 0 0;
+    color:black;
+	text-decoration:none;
+}
+
+
+
+.myPlayerTbl .flIcon, .myPlayerTbl .showFl span {
+    display: inline-block;
+}
+
+body {
+    color: #264462;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+
+.btIco {
+    position: relative;
+    z-index: 1;
+    background: url(batsman.jpg) no-repeat;
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    background-size: 100%;
+}
+
+.myPlayerTbl .btIco {
+    background-position: 0 33.333333%;
+}
+
+.myPlayerTbl .thPlIco .playerInfo {
+    background-color: rgba(42,69,203,.8);
+    border-radius: 5px;
+    padding: 1px 4px;
+    display: block;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 11.478px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 75%;
+    text-align: center;
+}
+
+/*my team right */
+
+.myTeamRight {
+    float: right;
+    width: 530px;
+}
+
+.myTeamRight .rightTopDiv {
+    clear: both;
+    float: left!important;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.mrLft15 {
+    margin-left: 15px;
+}
+
+.left {
+    float: left!important;
+}
+
+.myTeamRight .rightTopDiv .teamName {
+    float: left!important;
+    font-size: 16px;
+    font-weight: 700!important;
+}
+
+
+.myTeamRight .playerMinMaxTable {
+    float: right!important;
+    border: 1px solid #d7d7d7;
+    padding: 10px;
+    position: relative;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color:inherit;
+}
+
+.myTeamRight .playerMinMaxTable tr td {
+    border-right: 1px solid #d7d7d7;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.myTeamRight .playerMinMaxTable tr:last-child td {
+    border-right: 1px solid #d7d7d7;
+    border-top: 1px solid #d7d7d7;
+}
+
+.myTeamRight .playerMinMaxTable tr td:last-child {
+    border-right: none;
+}
+
+
+/*end of topRightDiv and end of MinMaxTable*/
+
+/*starting of crField*/
+
+.crField {
+    position: relative;
+    clear: both;
+    float: left;
+    margin: 45px 0 10px 40px;
+    background: url(cricketField/pathway.jpg) no-repeat;  /*its repeating*/
+    background-size: contain;
+    width: 550px;
+    height: 371px;
+}
+
+
+.crField .player {
+    position: absolute;
+}
+
+.wc1 {                                      /*see about background-position*/
+    top: 0px;
+    left: 235px;
+	width:40px;
+	height:40px;
+	background-image:url(wicketKeeperDumb.jpg);
+	
+}
+
+.bt1 , .bt2 , .bt3 , .bt4 , .bt5 {
+    
+	width:40px;
+	height:40px;
+	background-image:url(batsmanDumb.jpg);
+	top:85px;
+	
+}
+
+.bt1{
+	
+	left:30px;
+}
+
+.bt2{
+	
+	left:130px;
+}
+
+.bt3{
+	
+	left:230px;
+}
+
+.bt4{
+	
+	left:330px;
+}
+
+.bt5{
+	
+	left:430px;
+}
+
+.fd1 , .fd2 , .fd3 {
+    
+	width:40px;
+	height:40px;
+	background-image:url(allRounderDumb.jpg);
+	top:160px;
+	
+}
+
+.fd1{
+	left:120px;
+}
+
+.fd2{
+	left:240px;
+}
+
+.fd3{
+	left:360px;
+}
+
+.bw1 , .bw2 , .bw3 , .bw4 , .bw5{
+    
+	width:40px;
+	height:40px;
+	background-image:url(bowlerDumb.jpg);
+	top:320px;
+	
+}
+
+
+.bw1{
+	
+	left:30px;
+}
+
+.bw2{
+	
+	left:130px;
+}
+
+.bw3{
+	
+	left:230px;
+}
+
+.bw4{
+	
+	left:330px;
+}
+
+.bw5{
+	
+	left:430px;
+}
+
+
+/*create team*/
+.active{
+	background:#C0C0C0;
+	cursor:pointer;
+}
+
+.bw1h{
+	background-image:url(bowlerGlow.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

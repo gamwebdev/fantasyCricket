@@ -1,0 +1,9 @@
+flaws in the create team  game making
+
+1. it works on the adding background-color through differnt class  ,  how to override that element
+
+2. how to apply the class which can change the remove the css style like colors background-colors etc.
+
+3. how to introduce variables in jquery .  //c
+
+4. how to perform cocatenation using jquery .

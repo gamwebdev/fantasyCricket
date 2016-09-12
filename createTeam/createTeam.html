@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="createTeam.css" type="text/css">
+
+<script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+<title></title> 
+</head>
+<body>
+
+<div class="mainWrapper" id="mainWrapper">
+	
+	<header>
+		<div class="container">
+		
+			<span class="logo">
+				<img src="sunnymax1.png" alt="header image" />
+			</span>
+		
+		</div><!--end of header container-->
+	</header>
+	
+	<div class="container">	
+	
+			<div class="roundsMain"></div>
+			
+			<div class="myTeamMain">
+				
+				<div class="myTeamLeft">
+				
+					<div class="creditRemain">
+						<p class="totalCredit">
+							<span><strong id="creditsLeft">100</strong>
+							</span>
+							Credits Left.
+						</p>	
+
+						<p class="plCount" style="display: block;">
+							<span id="playerCnt">0</span>/11
+						</p>		
+					</div>
+					
+					<div class="playerSelTabs playerSel">
+					
+						<ul class="typeFilterTabs">
+							<li  class="filterTabs_WK" data-ftype="WK" data-text="Select only 1 player from the list below." >
+								<a href="#"><span class="cnt">0</span>WK</a>
+							</li>
+						
+							
+							<li  class="filterTabs_BAT " data-ftype="BAT" data-text="Select min 3 &amp; max 5 players from the list below." >
+								<a href="#"><span class="cnt">0</span>Batsman</a>
+							</li>
+							
+							<li class="filterTabs_ALL" data-ftype="ALL" data-text="Select min 1 &amp; max 3 players from the list below.">
+								<a href="#"><span class="cnt">0</span>All-Rounders</a>
+							</li>
+							
+							<li class="filterTabs_BOWL" data-ftype="BOWL" data-text="Select min 3 &amp; max 5 players from the list below.">
+								<a href="#"><span class="cnt">0</span>Bowlers</a>
+							</li>
+							
+							<li class="filterTabs_ALLPLAY" data-ftype="AllPlay" data-text="Select 11 players to create your fantasy cricket team from the list below.">
+							<a href="#">All</a>
+							</li>
+							
+						</ul>
+						
+						<p class="selectNos">Select min 3 &amp; max 5 players from the list below.</p>
+						
+						<div class="myPlayerTbl">
+							<div class="plTopInfo">
+							
+								<div class="thPlIco">Info</div>
+								<div class="thPlName">Player</div>
+								<div class="thPlTeam showFl" id="teamSrt"> <span>Team</span><span class="up"></span>
+									
+								</div>
+								<div id="ptSort" class="thPlPoint"><span>Points</span><span class="up"></span></div>
+								<div id="crSort" class="thPlCr"><span>Credits</span><span class="up"></span></div>
+								<div class="thRgtIcon"></div>
+								<div class="xtraSpace">&nbsp;</div>
+								
+							</div>
+						</div><!--end of myPlayerTbl-->
+						
+						<div class="scrollpane">
+						
+							<div class="myPlayerTbl" id="teamPlyrList">
+							
+					<div class="playerRow BOWL_ptype" id="1347" style="display:none;">
+						<div class="thPlIco">
+							<a id="plyrInfoPopup" href="javascript:;" title="View player info"> 
+								<span class="btIco"></span>
+								<span class="playerInfo">info</span> 
+							</a>
+						</div>
+						
+						<div class="thPlName" title="Jason Roy">
+							JASON GILESPIE
+						</div>
+						
+						<div class="thPlTeam plyrTeam" data-flag="SUR-CR1">
+							SUR
+						</div>
+						
+						<div class="thPlPoint">
+							217
+						</div>
+						
+						<div class="thPlCr plyrCredits">
+							9.5
+						</div>
+						
+						<div class="thRgtIcon"><span class="plusIcon">+</span></div>
+						
+					</div><!--end of firstPlayer-->
+					
+					
+					<div class="playerRow BOWL_ptype" id="1348" style="display:none;">
+						<div class="thPlIco">
+							<a id="plyrInfoPopup" href="javascript:;" title="View player info"> 
+								<span class="btIco"></span>
+								<span class="playerInfo">info</span> 
+							</a>
+						</div>
+						
+						<div class="thPlName" title="Dawid Malan">
+							BRETT LEE
+						</div>
+						
+						<div class="thPlTeam plyrTeam" data-flag="SUR-CR1">
+							MID
+						</div>
+						
+						<div class="thPlPoint">
+							207.5
+						</div>
+						
+						<div class="thPlCr plyrCredits">
+							9.5
+						</div>
+						
+						<div class="thRgtIcon"><span class="plusIcon">+</span></div>
+						
+					</div><!--end of secondPlayer-->
+
+					<div class="playerRow BAT_ptype" id="1348" style="display:none;">
+						<div class="thPlIco">
+							<a id="plyrInfoPopup" href="javascript:;" title="View player info"> 
+								<span class="btIco"></span>
+								<span class="playerInfo">info</span> 
+							</a>
+						</div>
+						
+						<div class="thPlName" title="Kumar Sangakkara">
+							VIRENDER SEHWAG
+						</div>
+						
+						<div class="thPlTeam plyrTeam" data-flag="SUR-CR1">
+							SUR
+						</div>
+						
+						<div class="thPlPoint">
+							160.5
+						</div>
+						
+						<div class="thPlCr plyrCredits">
+							10
+						</div>
+						
+						<div class="thRgtIcon"><span class="plusIcon">+</span></div>
+						
+					</div><!--end of thirdPlayer-->					
+
+					<div class="playerRow BAT_ptype" id="1348" style="display:none;">
+						<div class="thPlIco">
+							<a id="plyrInfoPopup" href="javascript:;" title="View player info"> 
+								<span class="btIco"></span>
+								<span class="playerInfo">info</span> 
+							</a>
+						</div>
+						
+						<div class="thPlName" title="Kumar Sangakkara">
+							SACHIN TENDULKAR
+						</div>
+						
+						<div class="thPlTeam plyrTeam" data-flag="SUR-CR1">
+							SUR
+						</div>
+						
+						<div class="thPlPoint">
+							160.5
+						</div>
+						
+						<div class="thPlCr plyrCredits">
+							10
+						</div>
+						
+						<div class="thRgtIcon"><span class="plusIcon">+</span></div>
+						
+					</div><!--end of FOURTHPlayer-->	
+
+					<div class="playerRow BOWL_ptype" id="1348" style="display:none;">
+						<div class="thPlIco">
+							<a id="plyrInfoPopup" href="javascript:;" title="View player info"> 
+								<span class="btIco"></span>
+								<span class="playerInfo">info</span> 
+							</a>
+						</div>
+						
+						<div class="thPlName" title="Kumar Sangakkara">
+							ANIL KUMBLE
+						</div>
+						
+						<div class="thPlTeam plyrTeam" data-flag="SUR-CR1">
+							MID
+						</div>
+						
+						<div class="thPlPoint">
+							160.5
+						</div>
+						
+						<div class="thPlCr plyrCredits">
+							10
+						</div>
+						
+						<div class="thRgtIcon"><span class="plusIcon">+</span></div>
+						
+					</div><!--end of FIFTHPlayer-->	
+
+					<div class="playerRow ALL_ptype" id="1348" style="display:none;">
+						<div class="thPlIco">
+							<a id="plyrInfoPopup" href="javascript:;" title="View player info"> 
+								<span class="btIco"></span>
+								<span class="playerInfo">info</span> 
+							</a>
+						</div>
+						
+						<div class="thPlName" title="Kumar Sangakkara">
+							ANGELO MATTHEWS
+						</div>
+						
+						<div class="thPlTeam plyrTeam" data-flag="SUR-CR1">
+							MID
+						</div>
+						
+						<div class="thPlPoint">
+							160.5
+						</div>
+						
+						<div class="thPlCr plyrCredits">
+							10
+						</div>
+						
+						<div class="thRgtIcon"><span class="plusIcon">+</span></div>
+						
+					</div><!--end of sixthPlayer-->		
+
+					<div class="playerRow WK_ptype" id="1348" style="display:none;">
+						<div class="thPlIco">
+							<a id="plyrInfoPopup" href="javascript:;" title="View player info"> 
+								<span class="btIco"></span>
+								<span class="playerInfo">info</span> 
+							</a>
+						</div>
+						
+						<div class="thPlName" title="Kumar Sangakkara">
+							MS DHONI
+						</div>
+						
+						<div class="thPlTeam plyrTeam" data-flag="SUR-CR1">
+							SUR
+						</div>
+						
+						<div class="thPlPoint">
+							160.5
+						</div>
+						
+						<div class="thPlCr plyrCredits">
+							10
+						</div>
+						
+						<div class="thRgtIcon"><span class="plusIcon">+</span></div>
+						
+					</div><!--end of seventhPlayer-->	
+					
+					<div class="playerRow BAT_ptype" id="1348" style="display:none;">
+						<div class="thPlIco">
+							<a id="plyrInfoPopup" href="javascript:;" title="View player info"> 
+								<span class="btIco"></span>
+								<span class="playerInfo">info</span> 
+							</a>
+						</div>
+						
+						<div class="thPlName" title="Kumar Sangakkara">
+							DAVID WARNER
+						</div>
+						
+						<div class="thPlTeam plyrTeam" data-flag="SUR-CR1">
+							MID
+						</div>
+						
+						<div class="thPlPoint">
+							160.5
+						</div>
+						
+						<div class="thPlCr plyrCredits">
+							10
+						</div>
+						
+						<div class="thRgtIcon"><span class="plusIcon">+</span></div>
+						
+					</div><!--end of eigthPlayer-->						
+
+					<div class="playerRow BOWL_ptype" id="1348" style="display:none;">
+						<div class="thPlIco">
+							<a id="plyrInfoPopup" href="javascript:;" title="View player info"> 
+								<span class="btIco"></span>
+								<span class="playerInfo">info</span> 
+							</a>
+						</div>
+						
+						<div class="thPlName" title="Kumar Sangakkara">
+							RANGANA HERATH
+						</div>
+						
+						<div class="thPlTeam plyrTeam" data-flag="SUR-CR1">
+							SUR
+						</div>
+						
+						<div class="thPlPoint">
+							160.5
+						</div>
+						
+						<div class="thPlCr plyrCredits">
+							10
+						</div>
+						
+						<div class="thRgtIcon"><span class="plusIcon">+</span></div>
+						
+					</div><!--end of ninethPlayer-->
+
+					<div class="playerRow BAT_ptype" id="1348" style="display:none;">
+						<div class="thPlIco">
+							<a id="plyrInfoPopup" href="javascript:;" title="View player info"> 
+								<span class="btIco"></span>
+								<span class="playerInfo">info</span> 
+							</a>
+						</div>
+						
+						<div class="thPlName" title="Kumar Sangakkara">
+							Kumar Sangakkara
+						</div>
+						
+						<div class="thPlTeam plyrTeam" data-flag="SUR-CR1">
+							SUR
+						</div>
+						
+						<div class="thPlPoint">
+							160.5
+						</div>
+						
+						<div class="thPlCr plyrCredits">
+							10
+						</div>
+						
+						<div class="thRgtIcon"><span class="plusIcon">+</span></div>
+						
+					</div><!--end of tenthPlayer-->			
+
+					<div class="playerRow ALL_ptype" id="1348" style="display:none;">
+						<div class="thPlIco">
+							<a id="plyrInfoPopup" href="javascript:;" title="View player info"> 
+								<span class="btIco"></span>
+								<span class="playerInfo">info</span> 
+							</a>
+						</div>
+						
+						<div class="thPlName" title="Kumar Sangakkara">
+							JAQUE KALLIS
+						</div>
+						
+						<div class="thPlTeam plyrTeam" data-flag="SUR-CR1">
+							MID
+						</div>
+						
+						<div class="thPlPoint">
+							150
+						</div>
+						
+						<div class="thPlCr plyrCredits">
+							10
+						</div>
+						
+						<div class="thRgtIcon"><span class="plusIcon">+</span></div>
+						
+					</div><!--end of 11Player-->			
+
+
+					<div class="playerRow WK_ptype" id="1348" style="display:none;">
+						<div class="thPlIco">
+							<a id="plyrInfoPopup" href="javascript:;" title="View player info"> 
+								<span class="btIco"></span>
+								<span class="playerInfo">info</span> 
+							</a>
+						</div>
+						
+						<div class="thPlName" title="Kumar Sangakkara">
+							SHANE WATSON
+						</div>
+						
+						<div class="thPlTeam plyrTeam" data-flag="SUR-CR1">
+							SUR
+						</div>
+						
+						<div class="thPlPoint">
+							160.5
+						</div>
+						
+						<div class="thPlCr plyrCredits">
+							10
+						</div>
+						
+						<div class="thRgtIcon"><span class="plusIcon">+</span></div>
+						
+					</div><!--end of 12Player-->								
+							
+							</div> <!--end of """"myPlayTb1""""-->
+							
+						</div><!--end of scrollPane-->
+						
+					</div><!--end of playerselTabs-->
+					
+				</div><!--end of myTeamLeft-->
+				
+				<div class="myTeamRight">
+				
+					<div class="rightTopDiv">
+					
+						<div class="left mrLft15">
+							<p class="teamName">
+							Team
+							1
+							</p>
+				
+						</div>
+						
+						<div class="playerMinMaxTable">
+							
+							<table>
+							  <tbody>
+									<tr>
+									  <td>&nbsp;</td>
+									  <td>WK</td>
+									  <td>Bat</td>
+									  <td>AR</td>
+									  <td>Bowl</td>
+									</tr>
+									<tr>
+									  <td>Min</td>
+									  <td>1</td>
+									  <td>3</td>
+									  <td>1</td>
+									  <td>3</td>
+									</tr>
+									<tr>
+									  <td>Max</td>
+									  <td>1</td>
+									  <td>5</td>
+									  <td>3</td>
+									  <td>5</td>
+									</tr>
+							  </tbody>
+							</table>
+											
+	
+							
+
+					
+					</div><!--end of rightTopDiv-->
+					
+					</div>
+						
+						<div class="sel">
+							<div id="crField" class="crField">
+							
+								<div class="player wc1"></div>
+								<div class="player bt1"></div>
+								<div class="player bt2"></div>
+								<div class="player bt3"></div>
+								<div class="player bt4"></div>
+								<div class="player bt5"></div>
+								<div class="player fd1"></div>
+								<div class="player fd2"></div>
+								<div class="player fd3"></div>
+								<div class="player bw1"></div>
+								<div class="player bw2"></div>
+								<div class="player bw3"></div>
+								<div class="player bw4"></div>
+								<div class="player bw5"></div>
+								
+								
+								
+								
+								
+								
+							</div> <!--end of crField-->
+					</div> <!--end of sel-->
+					
+				</div><!--end of myTeamRight-->
+				
+			</div><!--end of myTeamMain-->
+	
+	</div><!--end of container-->
+	
+</div><!--end of mainWrapper-->
+
+<script type="text/javascript" src="createTeam.js"></script>
+</body>
+</html>
+
+
+
